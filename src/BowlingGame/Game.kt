@@ -6,4 +6,6 @@ class Game {
 
     }
 
+    fun score(): Int = 0
+
 }
