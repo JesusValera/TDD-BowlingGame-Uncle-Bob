@@ -1,4 +1,4 @@
-package BowlingGame
+package src
 
 import org.junit.jupiter.api.Disabled
 import org.junit.jupiter.api.Test
@@ -6,7 +6,7 @@ import kotlin.test.assertEquals
 
 class BowlingTest {
 
-    private val game: Game = Game()
+    private val game: BowlingGame = BowlingGame()
 
     private fun rollMany(n: Int, pins: Int) {
         for (i in 1..n) {

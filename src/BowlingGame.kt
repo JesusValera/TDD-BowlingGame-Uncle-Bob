@@ -1,6 +1,6 @@
-package BowlingGame
+package src
 
-class Game {
+class BowlingGame {
 
     private val rolls = IntArray(21)
     private var currentRoll: Int = 0
