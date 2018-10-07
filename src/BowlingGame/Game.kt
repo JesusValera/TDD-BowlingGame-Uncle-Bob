@@ -2,10 +2,12 @@ package BowlingGame
 
 class Game {
 
-    fun roll(pins: Int) {
+    private var score: Int = 0
 
+    fun roll(pins: Int) {
+        this.score += pins
     }
 
-    fun score(): Int = 0
+    fun score(): Int = score
 
 }

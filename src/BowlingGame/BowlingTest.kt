@@ -19,4 +19,13 @@ class BowlingTest {
         }
         assertEquals(0, game.score())
     }
+
+    @Test
+    fun allOnes() {
+        for (i in 1..20) {
+            game.roll(1)
+        }
+        assertEquals(20, game.score())
+    }
+
 }
