@@ -52,4 +52,9 @@ class BowlingTest {
         assertEquals(24, game.score())
     }
 
+    @Test
+    fun perfectGame() {
+        rollMany(12, 10)
+        assertEquals(300, game.score())
+    }
 }
