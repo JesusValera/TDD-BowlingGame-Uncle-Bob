@@ -19,6 +19,10 @@ class BowlingTest {
         game.roll(5)
     }
 
+    private fun rollStrike() {
+        game.roll(10)
+    }
+
     @Test
     fun gutterGame() {
         rollMany(20, 0)
@@ -37,6 +41,15 @@ class BowlingTest {
         game.roll(3)
         rollMany(17, 0)
         assertEquals(16, game.score())
+    }
+
+    @Test
+    fun oneStrike() {
+        rollStrike()
+        game.roll(3)
+        game.roll(4)
+        rollMany(17, 0)
+        assertEquals(24, game.score())
     }
 
 }
