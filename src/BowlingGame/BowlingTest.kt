@@ -4,9 +4,10 @@ import org.junit.jupiter.api.Test
 
 class BowlingTest {
 
-    @Test
-    fun canCreateGame() {
-        val game = Game()
-    }
+    private val game: Game = Game()
 
+    @Test
+    fun canRoll() {
+        game.roll(0)
+    }
 }
